@@ -1,0 +1,10 @@
+# This TOML file created for developer. You can delete it if you want.
+
+[Browsers]
+Chrome = { path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" }
+Brave = { path = "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe" }
+
+[SearchEngines]
+Google = { url = "https://www.google.com/search?q={query}" }
+DuckDuckGo = { url = "https://duckduckgo.com/?q={query}" }
+BraveSearch = { url = "https://search.brave.com/search?q={query}" }
