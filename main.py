@@ -33,22 +33,14 @@ while True:
         search_engine = profile["User"]["SearchEngine"]
         browser = profile["User"]["Browser"]
         
-        browser_path = ""
-        if browser == "Chrome":
-            browser_path = "C:/Program Files/Google/Chrome/Application/chrome.exe"
-        elif browser == "Brave":
-            browser_path = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"
+        browser_config = data["Browsers"].get(browser)
+        search_engine_config = data["SearchEngines"].get(search_engine)
         
-        search_url = ""
-        if search_engine == "Google":
-            search_url = f"https://www.google.com/search?q={urllib.parse.quote(search_query)}"
-        elif search_engine == "Brave":
-            search_url = f"https://search.brave.com/search?q={urllib.parse.quote(search_query)}"
-        elif search_engine == "DuckDuckGo":
-            search_url = f"https://duckduckgo.com/?q={urllib.parse.quote(search_query)}"
-            
+        browser_path = browser_config["path"] if browser_config else None
+        search_url_template = search_engine_config["url"] if search_engine_config else None
+         
         webbrowser.register(browser, None, webbrowser.BackgroundBrowser(browser_path))
-        webbrowser.get(browser).open(search_url)
+        webbrowser.get(browser).open(search_url_template.format(query=urllib.parse.quote(search_query)))
         
     # Settings menu    
     
@@ -63,22 +55,33 @@ while True:
         settings_choice = input("Enter your choice (1-3): ")
         
         if settings_choice == "1":
-            print("Change search engine(1. Google, 2. Brave, 3. DuckDuckGo)")
-            search_engine_choice = input("Enter your choice (1-3): ")
-            if search_engine_choice == "1":
-                profile["User"]["SearchEngine"] = "Google"
-            elif search_engine_choice == "2":
-                profile["User"]["SearchEngine"] = "Brave"
-            elif search_engine_choice == "3":
-                profile["User"]["SearchEngine"] = "DuckDuckGo"
-        
+            print("Change search engine(1. Google, 2. Brave, 3. DuckDuckGo, 4. Bing, 5. Yahoo, 6. Yandex, 7. PerplexityAI, 8. Baidu)")
+            search_engine_choice = input("Enter your choice (1-8): ")
+            search_engine_mapping = {
+                "1": "Google",
+                "2": "BraveSearch",
+                "3": "DuckDuckGo",
+                "4": "Bing",
+                "5": "Yahoo",
+                "6": "Yandex",
+                "7": "PerplexityAI",
+                "8": "Baidu"
+            }
+            if search_engine_choice in search_engine_mapping:
+                profile["User"]["SearchEngine"] = search_engine_mapping[search_engine_choice]
         elif settings_choice == "2":
-            print("Change browser (1. Chrome, 2. Brave)")
-            browser_choice = input("Enter your choice (1-2): ")
-            if browser_choice == "1":
-                profile["User"]["Browser"] = "Chrome"
-            elif browser_choice == "2":
-                profile["User"]["Browser"] = "Brave"
+            print("Change browser (1. Chrome, 2. Brave, 3. Firefox, 4. Edge, 5. Yandex, 6. Opera)")
+            browser_choice = input("Enter your choice (1-6): ")
+            browser_mapping = {
+                "1": "Chrome",
+                "2": "Brave",
+                "3": "Firefox",
+                "4": "Edge",
+                "5": "Yandex",
+                "6": "Opera"
+            }
+            if browser_choice in browser_mapping:
+                profile["User"]["Browser"] = browser_mapping[browser_choice]
         
         with open("profile.toml", "wb") as f:
             tomli_w.dump(profile, f)
