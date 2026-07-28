@@ -11,9 +11,9 @@ init(autoreset=True)
 def clear_console():
     os.system("cls" if os.name == "nt" else "clear")
 
-with open("Data/profile.toml", "rb") as f:
+with open("profile.toml", "rb") as f:
     profile = tomllib.load(f)
-with open("Data/Data.toml", "rb") as f:
+with open("Data.toml", "rb") as f:
     data = tomllib.load(f)
 
 while True:
