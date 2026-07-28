@@ -30,6 +30,33 @@
 ### 🛠 One-click installation: built-in script for automatic dependency installation
 
 <br>
+
+<details>
+<summary><h2>Screenshots<h2/></summary>
+  <blockquote>
+    <h2 align="center">Main Menu</h1>
+    <p align="center">
+      <img src="./Assets/MainMenu.png" alt="MainMenu">
+    <p/>
+    <br>
+    <h2 align="center">Settings Menu</h1>
+    <p align="center">
+      <img src="./Assets/SettingsMenu.png" alt="Settings">
+    <p/>
+    <br>
+    <h2 align="center">About Menu</h1>
+    <p align="center">
+      <img src="./Assets/AboutMenu.png" alt="About">
+    <p/>
+    <br>
+    <h2 align="center">WebView</h1>
+    <p align="center">
+      <img src="./Assets/WebView.png" alt="WebView">
+    <p/>
+  </blockquote>
+</details>
+
+<br>
  
 ## Quick Start:
 ### 🖥 Requirements
