@@ -23,5 +23,5 @@ ba = { url = "https://www.baidu.com/s?wd={query}" } # Baidu
 wiki = { url = "https://en.wikipedia.org/wiki/{query}" } # Wikipedia
 yt = { url = "https://www.youtube.com/results?search_query={query}" } # Youtube
 gh = { url = "https://github.com/search?q={query}" } # Github
-# Here you can add more search keywords for fastsearch. Use {query} as a placeholder for the search term.
+# Here you can add more search keywords for fastsearch.
     
