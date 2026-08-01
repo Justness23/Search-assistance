@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Build-%23b0184-brightgreen" alt="Build" />
+  <img src="https://img.shields.io/badge/Build-%23r0184-brightgreen" alt="Build" />
   <img src="https://img.shields.io/badge/Version-1.0.0-brightgreen" alt="Version" />
   <img src="https://img.shields.io/badge/License-MIT-orange" alt="License" />
   <img src="https://img.shields.io/badge/Language-Python-lightblue" alt="Language" />
