@@ -12,8 +12,8 @@
 <br>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Build-%23b2773-brightgreen" alt="Build" />
-  <img src="https://img.shields.io/badge/Version-0.2-brightgreen" alt="Version" />
+  <img src="https://img.shields.io/badge/Build-%23b0184-brightgreen" alt="Build" />
+  <img src="https://img.shields.io/badge/Version-1.0.0-brightgreen" alt="Version" />
   <img src="https://img.shields.io/badge/License-MIT-orange" alt="License" />
   <img src="https://img.shields.io/badge/Language-Python-lightblue" alt="Language" />
 </p>
@@ -36,15 +36,14 @@
 - Windows 7/10/11
 - Python(3.11+)
 - tomli-w
-- colorama
 - PyWebView
 
 ### 📥 Download
 1. Download latest version [HERE](https://github.com/Justness23/Search-assistance/releases)
 2. Download python (3.11+) [HERE](https://www.python.org/downloads/)
-3. Download tomli-w, colorama, pywebview(or start 'install_packages.bat')
+3. Download tomli-w,, pywebview (or start 'install_packages.bat')
 ```bash
-pip install tomli-w colorama pywebview
+pip install tomli-w pywebview
 ```
 4. Start SearchAssistance.bat
 
@@ -52,7 +51,7 @@ pip install tomli-w colorama pywebview
 
 ## Roadmap
 1. 🚫 AD Blocker
-2. 📟 GUI
+2. 📟 Rework CLI - Done ✅
 3. 🧠 Smart-Assistant
 
 <br>
