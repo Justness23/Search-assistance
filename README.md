@@ -2,7 +2,7 @@
   <img src="./Assets/Frame 1.png" alt="App Logo" width="128" height="128">
 </p>
 <p align="center">
-  <h1 align="center">Search Assistace</h1>
+  <h1 align="center">Search Assistant</h1>
 </p>
 
 <p align="center">
@@ -39,7 +39,7 @@
 - PyWebView
 
 ### 📥 Download
-1. Download latest version [HERE](https://github.com/Justness23/Search-assistance/releases)
+1. Download latest version [HERE](https://github.com/Justness23/Search-assistant/releases)
 2. Download python (3.11+) [HERE](https://www.python.org/downloads/)
 3. Download tomli-w,, pywebview (or start 'install_packages.bat')
 ```bash
