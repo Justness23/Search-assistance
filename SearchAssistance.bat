@@ -1,3 +1,3 @@
 @echo off
-python Data/main.py
+python src\menu.py
 pause

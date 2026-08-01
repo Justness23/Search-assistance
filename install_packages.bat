@@ -4,7 +4,7 @@ echo Installing required libraries: pywebview, colorama, tomli-w...s
 echo.
 
 python -m pip install --upgrade pip
-python -m pip install pywebview colorama tomli-w
+python -m pip install pywebview colorama tomli-w rich
 
 if %errorlevel% equ 0 (
     echo.
